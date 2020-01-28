@@ -1,4 +1,4 @@
-# Universidade
+# Universidade @ MIECT
 
 Conteúdos das mais variadas cadeiras lecionadas no curso de Engenharia de Computadores e Telemática, na Universidade de Aveiro.
 
