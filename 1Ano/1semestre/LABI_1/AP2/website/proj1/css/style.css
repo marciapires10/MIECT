@@ -1,0 +1,454 @@
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #c03639;
+}
+
+/*Global*/
+.container{
+  width:80%;
+  margin: auto;
+  overflow: hidden;
+
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/*Header*/
+header{
+  background:#c03639;
+  color:#ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float: center;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header nav{
+  float: center;
+  margin-top: 10px;
+  margin-left: 150px;
+}
+
+
+header a:hover{
+  color:#cccccc;
+  font-weight: bold;
+}
+
+/*showcase*/
+#showcase{
+  min-height: 400px;
+  background: url('../img/o-TERRORISM-facebook5.jpg') no-repeat -40px -230px;
+  text-align: center;
+  color:#cccccc;
+}
+
+#showcase h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+  font-size: 20px;
+}
+
+#quotes{
+  height: 130px;
+  background-color: #cccccc;
+}
+
+#quotes h1{
+  font-size: 40px;
+  font-family: verdana;
+  text-align: center;
+}
+
+#resto{
+  background-color: #c03639;
+}
+
+#dentro{
+  background-color: #cccccc;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+#dentro h1{
+  color: #c03639;
+  text-align: center;
+  margin-top: 5px;
+}
+
+footer{
+  text-align: center;
+  background-color: #c03639;
+  color: #ffffff;
+}
+
+#wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+  margin-left: -250px;
+  left: 250px;
+  width: 250px;
+  background: #000;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+#wrapper.active {
+  padding-left: 0;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 0;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #cccccc;
+  display: block;
+  text-decoration: none;
+  padding-left: 60px;
+}
+
+.sidebar-nav li a span:before {
+  position: absolute;
+  left: 0;
+  color: #cccccc;
+  text-align: center;
+  width: 20px;
+  line-height: 18px;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li.active {
+  color: #fff;
+  background: rgba(204,204,204,0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+.content-header {
+  height: 65px;
+  line-height: 65px;
+}
+
+.content-header h1 {
+  margin: 0;
+  margin-left: 20px;
+  line-height: 65px;
+  display: inline-block;
+}
+
+#menu-toggle {
+    text-decoration: none;
+}
+
+.btn-menu {
+  color: #000;
+}
+
+.inset {
+  padding: 20px;
+}
+
+@media (max-width:767px) {
+
+#wrapper {
+  padding-left: 0;
+}
+
+#sidebar-wrapper {
+  left: 0;
+}
+
+#wrapper.active {
+  position: relative;
+  left: 250px;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 250px;
+  width: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#menu-toggle {
+  display: inline-block;
+}
+
+.inset {
+  padding: 15px;
+}
+
+}
+
+#textodef, #textohist, #textotipo, #textocausa, #textocausa, #textoconseq, #definicaociber, #vantagens, #atuacao, #texto, #ciberterrorismo, #sobre{
+  background-color: #cccccc;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+#textodef h1, #textohist h1, #textotipo h1, #textocausa h1, #textoconseq h1, #definicaociber h1, #vantagens h1, #atuacao h1{
+  color: #d20603;
+  text-align: left;
+  text-decoration: bold;
+}
+
+#textodef h4, #textohist h4, #textotipo h4, #textocausa h4, #textoconseq h4, #definicaociber h4, #vantagens h4, #atuacao h4, #texto h4, #ciberterrorismo h4{
+  text-align: justify;
+  text-indent: 10px;
+}
+
+#sobre h4{
+  text-align: center;
+}
+
+#textodef blockquote{
+  background-color: rgba(213, 81, 79, 0.3);
+  text-align: justify;
+  text-align: center;
+}
+
+#textodef blockquote footer{
+  font-style: italic;
+  background-color: rgba(213, 81, 79, 0.3)
+}
+
+#video{
+  background-color: #cccccc;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+#video1 video{
+  width: 1000px;
+  height: 1000px;
+  margin-left: 50px;
+}
+
+
+
+#textohist h6{
+  text-align: center;
+}
+
+#close{
+  color: black;
+  font-size: 35px;
+  position: absolute;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  right: 0;
+}
+
+#close:hover{
+  opacity: 0.6;
+}
+
+.button{
+  background-color: #c03639;
+  padding: 1em 2em;
+  color: white;
+  border:0;
+}
+
+.button:hover{
+  background: #333;
+}
+
+.modal{
+  /*display: none;*/
+  position: fixed;
+  z-index: 1;
+  left: 450px ;
+  top:0;
+  height: 100%;
+  width: 50%;
+  overflow: auto;
+  background-color: : rgba(0,0,0,0.8);
+}
+
+.modal-content{
+  background-color: #cccccc;
+  margin: 20% auto;
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+}
+
+.closeBtn{
+  color: #cccccc;
+  float: right;
+  font-size: 30px;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 150px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+#oMeuMapa{
+  left: 140px;
+  bottom: 20px;
+}
+
+#oMeuMapa1{
+  left: 50px;
+  bottom: 30px;
+}

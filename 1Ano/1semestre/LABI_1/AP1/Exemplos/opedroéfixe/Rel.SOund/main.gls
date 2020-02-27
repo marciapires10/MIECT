@@ -1,0 +1,34 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{A}\relax \glsresetentrylist %
+\glossaryentryfield{AAC}{\glsnamefont{AAC}}{ - abreviação de Advanced Audio Coding, um formato de compressão de áudio digital.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{4}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{7\delimR 9}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{12\delimR 14}}}\glsgroupskip
+\glsgroupheading{B}\relax \glsresetentrylist %
+\glossaryentryfield{bitrate}{\glsnamefont{Bitrate}}{{ - n.º de bits convertidos/processados por unidade de tempo} plural}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{5}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{8\delimN 9}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{12}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{14}}}\glsgroupskip
+\glsgroupheading{G}\relax \glsresetentrylist %
+\glossaryentryfield{GSM}{\glsnamefont{GSM}}{ - formato de áudio, muito utilizado em telemóveis.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{4}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{7}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{9}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{12\delimR 14}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossaryentryfield{MP3}{\glsnamefont{MP3}}{ - abreviação de MPEG Layer 3, um formato de compressão de áudio digital.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{4}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{7\delimR 9}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{12\delimR 14}}}\glsgroupskip
+\glsgroupheading{R}\relax \glsresetentrylist %
+\glossaryentryfield{RMSD}{\glsnamefont{RMSD}}{ - Root Mean Square Deviation(raiz quadrada da média do quadrado das diferenças}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{5}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{10}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{12}}}\glsgroupskip
+\glsgroupheading{W}\relax \glsresetentrylist %
+\glossaryentryfield{WAV}{\glsnamefont{WAV}}{ - WAVEform audio file format}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{5}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{8\delimN 9}}}%
+\end{theglossary}\glossarypostamble

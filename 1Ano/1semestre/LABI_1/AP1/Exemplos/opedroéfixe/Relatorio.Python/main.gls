@@ -1,0 +1,19 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{B}\relax \glsresetentrylist %
+\glossaryentryfield{Beautiful is better than ugly}{\glsnamefont{Beautiful is better than ugly :}}{Bonito é melhor que feio.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{11}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{13}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+\glsgroupheading{E}\relax \glsresetentrylist %
+\glossaryentryfield{Explicit is better than implicit}{\glsnamefont{Explicit is better than implicit :}}{Explícito é melhor que implícito.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{10}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{18}}}\glsgroupskip
+\glsgroupheading{R}\relax \glsresetentrylist %
+\glossaryentryfield{Readability counts}{\glsnamefont{Readability counts :}}{A legibilidade conta.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{11}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossaryentryfield{Simple is better than complex}{\glsnamefont{Simple is better than complex :}}{Simples é melhor que complexo.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{14}}}%
+\end{theglossary}\glossarypostamble

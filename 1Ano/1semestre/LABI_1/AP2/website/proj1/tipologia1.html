@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width">
+    <meta name ="description" content="Terrorismo">
+    <meta name="keywords" content="terrorismo, ciberterrorismo">
+    <meta name ="author" content="Márcia Pires">
+    <title>Terrorismo | Tipologia</title>
+    <!--<link rel="stylesheet" href="./css/style.css">-->
+    <link rel="javascript" href="./js/javascript.js">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <style>
+      body{
+        font: 15px/1.5 Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+        background-color: #c03639;
+      }
+
+      .container{
+        width:80%;
+        margin: auto;
+        overflow: hidden;
+
+        ul{
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      header{
+        background:#c03639;
+        color:#ffffff;
+        padding-top: 30px;
+        min-height: 100px;
+      }
+
+      header a{
+        color:#ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size:16px;
+      }
+
+      header li{
+        float: center;
+        display: inline;
+        padding: 0 20px 0 20px;
+      }
+
+      header nav{
+        float: center;
+        margin-top: 10px;
+        margin-left: 150px;
+      }
+
+
+      header a:hover{
+        color:#cccccc;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      footer{
+        text-align: center;
+        background-color: #c03639;
+        color: #ffffff;
+      }
+
+      #wrapper {
+        padding-left: 250px;
+        transition: all 0.4s ease 0s;
+      }
+
+      #sidebar-wrapper {
+        margin-left: -250px;
+        left: 250px;
+        width: 250px;
+        background: #000;
+        position: fixed;
+        height: 100%;
+        overflow-y: auto;
+        z-index: 1000;
+        transition: all 0.4s ease 0s;
+      }
+
+      #wrapper.active {
+        padding-left: 0;
+      }
+
+      #wrapper.active #sidebar-wrapper {
+        left: 0;
+      }
+
+      #page-content-wrapper {
+        width: 100%;
+      }
+
+      .sidebar-nav {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sidebar-nav li {
+        line-height: 40px;
+        text-indent: 20px;
+      }
+
+      .sidebar-nav li a {
+        color: #cccccc;
+        display: block;
+        text-decoration: none;
+        padding-left: 60px;
+      }
+
+      .sidebar-nav li a span:before {
+        position: absolute;
+        left: 0;
+        color: #cccccc;
+        text-align: center;
+        width: 20px;
+        line-height: 18px;
+      }
+
+      .sidebar-nav li a:hover,
+      .sidebar-nav li.active {
+        color: #fff;
+        background: rgba(204,204,204,0.2);
+        text-decoration: none;
+      }
+
+      .sidebar-nav li a:active,
+      .sidebar-nav li a:focus {
+        text-decoration: none;
+      }
+
+      .sidebar-nav > .sidebar-brand {
+        height: 65px;
+        line-height: 60px;
+        font-size: 18px;
+      }
+
+      .sidebar-nav > .sidebar-brand a {
+        color: #999999;
+      }
+
+      .sidebar-nav > .sidebar-brand a:hover {
+        color: #fff;
+        background: none;
+      }
+
+      .content-header {
+        height: 65px;
+        line-height: 65px;
+      }
+
+      .content-header h1 {
+        margin: 0;
+        margin-left: 20px;
+        line-height: 65px;
+        display: inline-block;
+      }
+
+      #menu-toggle {
+          text-decoration: none;
+      }
+
+      .btn-menu {
+        color: #000;
+      }
+
+      .inset {
+        padding: 20px;
+      }
+
+      @media (max-width:767px) {
+
+      #wrapper {
+        padding-left: 0;
+      }
+
+      #sidebar-wrapper {
+        left: 0;
+      }
+
+      #wrapper.active {
+        position: relative;
+        left: 250px;
+      }
+
+      #wrapper.active #sidebar-wrapper {
+        left: 250px;
+        width: 250px;
+        transition: all 0.4s ease 0s;
+      }
+
+      #menu-toggle {
+        display: inline-block;
+      }
+
+      .inset {
+        padding: 15px;
+      }
+
+      }
+
+      #textotipo{
+        background-color: #cccccc;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+
+      #textotipo h1{
+        color: #c03639;
+        text-align: left;
+        text-decoration: bold;
+      }
+
+      #textotipo p{
+        text-align: justify;
+        text-indent: 10px;
+      }
+
+      .btn-primary{
+        background-color: #c03639;
+        border-color: #c03639;
+      }
+
+      .btn-primary:hover{
+        background-color: grey;
+        border-color: grey;
+      }
+
+      #oMeuPopup, #oMeuPopup1, #oMeuPopup2, #oMeuPopup3, #oMeuPopup4, #oMeuPopup5{
+        margin-left: 200px;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li class="current"><a href="index1.html">Página Inicial</a></li>
+            <li><a href="definiçao1.html">Terrorismo</a></li>
+            <li><a href="ciberterrorismo1.html">Ciberterrorismo</a></li>
+            <li><a href="about1.html">Acerca</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <nav id="spy">
+                <ul class="sidebar-nav nav">
+                    <li class="sidebar-brand">
+                        <a href="definiçao1.html"><span class="fa fa-home solo">Terrorismo</span></a>
+                    </li>
+                    <li>
+                        <a href="definiçao1.html" data-scroll>
+                            <span class="fa fa-anchor solo">Definição</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="historia1.html" data-scroll>
+                            <span class="fa fa-anchor solo">História</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tipologia1.html" data-scroll>
+                            <span class="fa fa-anchor solo">Tipologia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="causas1.html" data-scroll>
+                            <span class="fa fa-anchor solo">Causas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="consequencias1.html" data-scroll>
+                            <span class="fa fa-anchor solo">Consequências</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    <section id="textotipo">
+      <div class="container">
+        <h1><b>Quais são os tipos de terrorismo?</b></h1>
+        <br>
+        <h4><p><b>Terrorismo Indiscriminado</b></p></h4>
+          <p>Resulta de atos que visam, de maneira deliberada e indiscriminada, fazer vítimas inocentes e em grande escala, não obedecendo a nenhuma sistemática.</p><p> A universalidade da vítima é a principal característica deste terrorismo. Por ser aleatório, todos são suspeitos e a repressão torna-se muito difícil.</p>
+          <br>
+        <h4><p><b>Terrorismo Seletivo</b></p></h4>
+          <p>Caraterizado como um ato que visa um alvo reduzido, estudado e pré-definido antes de ser efetuado. O terror é alimentado através de chantagem, vingança e eliminação de um obstáculo.</p>
+          <br>
+          <p>Dado o carácter seletivo, podemos distinguir os seguintes tipos:</p>
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#oMeuPopup"> Religioso </button>
+                  <div id="oMeuPopup" class="modal fade">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"><b>Religioso</b></h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Associado ao fundamentalismo e extremismo de membros de diferentes religiões que agem violentamente pelo facto de se definirem pela sua religiosidade sendo a religião preponderante nos objetivos e maneira de atuar do grupo.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                      </div>
+                   </div>
+                   </div>
+                   <p></p>
+                   <button class="btn btn-primary" data-toggle="modal" data-target="#oMeuPopup1"> Nacionalista </button>
+                   <div id="oMeuPopup1" class="modal fade">
+                   <div class="modal-dialog">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                         <h4 class="modal-title"><b>Nacionalista</b></h4>
+                       </div>
+                       <div class="modal-body">
+                         <p>Realizado por grupos com fortes ideologias nacionalistas, que visam estabelecer um estado independente, tomar o controle da nação, e/ou ainda derrubar um sistema político.</p>
+                       </div>
+                       <div class="modal-footer">
+                         <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                         </div>
+                       </div>
+                    </div>
+                    </div>
+                    <p></p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#oMeuPopup2"> de Estado </button>
+                    <div id="oMeuPopup2" class="modal fade">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title"><b>de Estado</b></h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>Surge quando os governos se impõem, de forma violenta, contra a sua sociedade. O grupo político, uma vez detentor do poder, utiliza-o de forma a provocar o terror como instrumento de governabilidade. </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                          </div>
+                        </div>
+                     </div>
+                     </div>
+                     <p></p>
+                     <button class="btn btn-primary" data-toggle="modal" data-target="#oMeuPopup3"> Comunitário </button>
+                     <div id="oMeuPopup3" class="modal fade">
+                     <div class="modal-dialog">
+                       <div class="modal-content">
+                         <div class="modal-header">
+                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                           <h4 class="modal-title"><b>Comunitário</b></h4>
+                         </div>
+                         <div class="modal-body">
+                           <p>Desacatos desordenados, em que a população ou as suas autoridades intervêm diretamente, contra outras comunidades, geralmente minorias étnicas ou religiosas. Este “terror coletivo” visa a expulsão ou eliminação destas.</p>
+                         </div>
+                         <div class="modal-footer">
+                           <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                           </div>
+                         </div>
+                      </div>
+                      </div>
+                      <p></p>
+                      <button class="btn btn-primary" data-toggle="modal" data-target="#oMeuPopup4">Bioterrorismo</button>
+                      <div id="oMeuPopup4" class="modal fade">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"><b>Bioterrorismo</b></h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Ataques em que ocorre uma libertação de vírus, bactérias ou outros germes, sendo um dos tipos de terrorismo que é de esperar que consiga efetivar o maior número de mortes, devido à sua rápida proliferação. </p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                            </div>
+                          </div>
+                       </div>
+                       </div>
+                       <p></p>
+                       <button class="btn btn-primary" data-toggle="modal" data-target="#oMeuPopup5">Ciberterrorismo</button>
+                       <div id="oMeuPopup5" class="modal fade">
+                       <div class="modal-dialog">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                             <h4 class="modal-title"><b>Ciberterrorismo</b></h4>
+                           </div>
+                           <div class="modal-body">
+                             <p><a href="ciberterrorismo1.html">Ciberterrorismo</a></p>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                             </div>
+                           </div>
+                        </div>
+                        </div>
+                        <p></p>
+                        <p></p>
+      </div>
+    </section>
+
+
+    <footer>
+      Departamento de Eletrónica, Telecomunicações e Informática || Márcia Pires, copyright &copy; 2018
+      <img src="./img/logo.png" style="width:200px; height:90px; margin-left: 100px"></img>
+    </footer>
+
+    <script src="./js/javascript.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width">
+    <meta name ="description" content="Terrorismo">
+    <meta name="keywords" content="terrorismo, ciberterrorismo">
+    <meta name ="author" content="Márcia Pires">
+    <title>Terrorismo | WELCOME</title>
+    <!--<link rel="stylesheet" href="./css/style.css">-->
+    <link rel="javascript" href="./js/javascript.js">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <style>
+
+    body{
+      font: 15px/1.5 Arial, Helvetica, sans-serif;
+      padding: 0;
+      margin: 0;
+      background-color: #c03639;
+    }
+
+    .container{
+      width:80%;
+      margin: auto;
+      overflow: hidden;
+
+      ul{
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    header{
+      background:#c03639;
+      color:#ffffff;
+      padding-top: 30px;
+      min-height: 100px;
+    }
+
+    header a{
+      color:#ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size:16px;
+    }
+
+    header li{
+      float: center;
+      display: inline;
+      padding: 0 20px 0 20px;
+    }
+
+    header nav{
+      float: center;
+      margin-top: 10px;
+      margin-left: 150px;
+    }
+
+
+    header a:hover{
+      color:#cccccc;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /*showcase*/
+    #showcase{
+      min-height: 400px;
+      background: url('./img/o-TERRORISM-facebook5.jpg') no-repeat -40px -230px;
+      text-align: center;
+      color:#cccccc;
+    }
+
+    #showcase h1{
+      margin-top: 100px;
+      font-size: 55px;
+      margin-bottom: 10px;
+    }
+
+    #showcase p{
+      font-size: 20px;
+    }
+
+    #quotes{
+      height: 130px;
+      background-color: #cccccc;
+    }
+
+    #quotes h1{
+      font-size: 70px;
+      font-family: times new roman;
+      text-align: center;
+      text-decoration: bolder;
+      color:black;
+    }
+
+    #quotes h4{
+      font-family: times new roman;
+      text-align: center;
+      text-shadow: black;
+      color: black;
+    }
+
+    #resto{
+      background-color: #c03639;
+    }
+
+    #dentro{
+      background-color: #cccccc;
+
+    }
+
+    #videointro{
+      background-color: #cccccc;
+    }
+
+    #dentromais{
+      background-color: #cccccc;
+      margin-top: 5px;
+    }
+
+    #dentro h1{
+      color: #c03639;
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    #dentro h4{
+      color:black;
+      text-align: center;
+      text-align: justify;
+      margin-left: 80px;
+      margin-right: 80px;
+      margin-top: auto;
+
+    }
+
+    footer{
+      text-align: center;
+      background-color: #c03639;
+      color: #ffffff;
+    }
+
+    #oMeuMapa{
+      left: 140px;
+      bottom: 20px;
+    }
+
+    #videointro video{
+      width: 560px;
+      height: 320px;
+      margin-left: 200px;
+    }
+
+    #dentromais{
+      color: #c03639;
+      text-align: center;
+    }
+
+    #dentromais p{
+      color:black;
+    }
+
+    #dentromais blockquote{
+      background-color: rgba(213, 81, 79, 0.3);
+      text-align: justify;
+      text-align: center;
+    }
+
+
+
+    </style>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li class="current"><a href="index1.html">Página Inicial</a></li>
+            <li><a href="definiçao1.html">Terrorismo</a></li>
+            <li><a href="ciberterrorismo1.html">Ciberterrorismo</a></li>
+            <li><a href="about1.html">Acerca</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+      </div>
+    </section>
+
+    <section id="quotes">
+      <h1><b>TERRORISMO</b></h1>
+      <h4>A ameaça do momento: ciberterrorismo </h4>
+    </section>
+
+    <section id="resto">
+      <section id="dentro">
+        <div class="container">
+        <br>
+        <h4>Vivemos num mundo cada vez mais perigoso e hostil, onde somos constantemente testemunhas das atrocidades terroristas que atualmente ameaçam todos os países e indivíduos.</h4>
+      </div>
+      </section>
+      <section id="videointro">
+        <div class="container">
+          <br>
+        <video width="580" height="320" controls>
+          <source src="./video/Introdução.mp4" type="video/mp4">
+        </video>
+        <br>
+        <br>
+       </div>
+      </section>
+      <section id="dentromais">
+        <div class="container">
+          <br>
+        <h1><b>Ataques terroristas mais populares de 2017</b></h1>
+        <br>
+        <p></p>
+        <p></p><br>
+        <div id="oMeuMapa" style="width: 700px; height: 400px"></div>
+        <script type="text/javascript" src="./js/map.js"></script>
+        <p></p>
+        <p></p>
+        <br>
+        <h1><b>Direitos Humanos</b></h1>
+        <p></p>
+        <p>É importante não deixar o medo se apoderar da sociedade e, mais importante ainda, é não deixar que este nos leve a abdicar dos <b>direitos da Humanidade</b>, que tantos séculos levaram a ser conquistados. Isto porque os <b>atos terroristas</b> violam alguns desses artigos:</p>
+        <blockquote>
+          <p>"Artigo I: Todas as pessoas nascem livres e iguais em dignidade e direitos. São dotadas de razão e consciência e devem agir em relação umas às outras com espírito de fraternidade."</p>
+        </blockquote><p></p>
+        <blockquote>
+          <p>"Artigo III: Toda pessoa tem direito à vida, à liberdade e à segurança pessoal."</p>
+        </blockquote><p></p>
+        <blockquote>
+          <p>"Artigo V: Ninguém será submetido à tortura, nem a tratamento ou castigo cruel, desumano ou degradante."</p>
+        </blockquote><p></p>
+        <blockquote>
+          <p>"Artigo XXII: Toda pessoa, como membro da sociedade, tem direito à segurança social e à realização, pelo esforço nacional, pela cooperação internacional e de acordo com a organização e recursos de cada Estado, dos direitos económicos, sociais e culturais indispensáveis à sua dignidade e ao livre desenvolvimento da sua personalidade." </p>
+        </blockquote>
+        <br>
+
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      Departamento de Eletrónica, Telecomunicações e Informática || Márcia Pires, copyright &copy; 2018
+      <img src="./img/logo.png" style="width:200px; height:90px; margin-left: 100px"></img>
+    </footer>
+
+  </body>
+</html>

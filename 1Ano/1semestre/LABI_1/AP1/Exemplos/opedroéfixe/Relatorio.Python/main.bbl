@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{Udemy}
+Kasia Mikoluk.
+\newblock {Python vs. Java}.
+\newblock \url{https://www.udemy.com/blog/python-vs-java/}.
+\newblock [Acedido em 22 de Fevereiro de 2014].
+
+\bibitem{Python}
+Python.
+\newblock {Python Documentation}.
+\newblock \url{http://www.python.org/doc/}.
+\newblock [Acedido em 22 de Fevereiro de 2014].
+
+\bibitem{JDK}
+Oracle.
+\newblock {Java Documentation}.
+\newblock \url{http://docs.oracle.com/javase/7/docs/api/}.
+\newblock [Acedido em 22 de Fevereiro de 2014].
+
+\bibitem{Guide12}
+João~Paulo Barraca.
+\newblock {Guião 12 - Python}.
+\newblock [Acedido em 20 de Fevereiro de 2014].
+
+\end{thebibliography}

@@ -1,0 +1,45 @@
+\contentsline {section}{References}{1}{Doc-Start}
+\select@language {portuguese}
+\contentsline {section}{Lista de Tabelas}{3}{chapter*.1}
+\contentsline {section}{Lista de Figuras}{3}{chapter*.1}
+\contentsline {section}{\numberline {0.1}Resumo}{4}{section.0.1}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{5}{chapter.1}
+\contentsline {chapter}{\numberline {2}Prepara\IeC {\c c}\IeC {\~a}o}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}M\IeC {\'a}quina e sistema operativo utilizados}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Instala\IeC {\c c}\IeC {\~a}o das aplica\IeC {\c c}\IeC {\~o}es necess\IeC {\'a}rias}{6}{section.2.2}
+\contentsline {chapter}{\numberline {3}Procedimento}{7}{chapter.3}
+\contentsline {chapter}{\numberline {4}An\IeC {\'a}lise de Resultados}{8}{chapter.4}
+\contentsline {section}{\numberline {4.1}Exerc\IeC {\'\i }cio 1}{8}{section.4.1}
+\contentsline {section}{\numberline {4.2}Exerc\IeC {\'\i }cio 2}{10}{section.4.2}
+\contentsline {section}{\numberline {4.3}Exerc\IeC {\'\i }cio 3}{11}{section.4.3}
+\contentsline {section}{\numberline {4.4}Exerc\IeC {\'\i }cio 4}{12}{section.4.4}
+\contentsline {section}{\numberline {4.5}Exerc\IeC {\'\i }cio 5}{13}{section.4.5}
+\contentsline {section}{\numberline {4.6}Exerc\IeC {\'\i }cio 6}{14}{section.4.6}
+\contentsline {section}{\numberline {4.7}Exerc\IeC {\'\i }cio 7}{15}{section.4.7}
+\contentsline {section}{\numberline {4.8}An\IeC {\'a}lise Geral \relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Adaptado de Udemy\cite {Udemy}}{17}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Tipos est\IeC {\'a}ticos vs. tipos din\IeC {\^a}micas}{17}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Chavetas vs. Indenta\IeC {\c c}\IeC {\~a}o}{17}{subsection.4.8.2}
+\contentsline {subsection}{\numberline {4.8.3}Portabilidade vs Velocidade}{18}{subsection.4.8.3}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{19}{chapter.5}
+\contentsline {chapter}{Gloss\IeC {\'a}rio}{19}{chapter.5}
+\contentsline {chapter}{\numberline {A}Exerc\IeC {\'\i }cio 1}{22}{appendix.A}
+\contentsline {section}{\numberline {A.1}Java}{22}{section.A.1}
+\contentsline {section}{\numberline {A.2}Python}{23}{section.A.2}
+\contentsline {chapter}{\numberline {B}Exerc\IeC {\'\i }cio 2}{24}{appendix.B}
+\contentsline {section}{\numberline {B.1}Java}{24}{section.B.1}
+\contentsline {section}{\numberline {B.2}Python}{25}{section.B.2}
+\contentsline {chapter}{\numberline {C}Exerc\IeC {\'\i }cio 3}{26}{appendix.C}
+\contentsline {section}{\numberline {C.1}Java}{26}{section.C.1}
+\contentsline {section}{\numberline {C.2}Python}{26}{section.C.2}
+\contentsline {chapter}{\numberline {D}Exerc\IeC {\'\i }cio 4}{28}{appendix.D}
+\contentsline {section}{\numberline {D.1}Java}{28}{section.D.1}
+\contentsline {section}{\numberline {D.2}Python}{29}{section.D.2}
+\contentsline {chapter}{\numberline {E}Exerc\IeC {\'\i }cio 5}{30}{appendix.E}
+\contentsline {section}{\numberline {E.1}Java}{30}{section.E.1}
+\contentsline {section}{\numberline {E.2}Python}{30}{section.E.2}
+\contentsline {chapter}{\numberline {F}Exerc\IeC {\'\i }cio 6}{32}{appendix.F}
+\contentsline {section}{\numberline {F.1}Java}{32}{section.F.1}
+\contentsline {section}{\numberline {F.2}Python}{32}{section.F.2}
+\contentsline {chapter}{\numberline {G}Exerc\IeC {\'\i }cio 7}{34}{appendix.G}
+\contentsline {section}{\numberline {G.1}Java}{34}{section.G.1}
+\contentsline {section}{\numberline {G.2}Python}{35}{section.G.2}

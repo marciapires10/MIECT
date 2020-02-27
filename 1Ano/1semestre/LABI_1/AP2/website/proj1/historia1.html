@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width">
+    <meta name ="description" content="Terrorismo">
+    <meta name="keywords" content="terrorismo, ciberterrorismo">
+    <meta name ="author" content="Márcia Pires">
+    <title>Terrorismo | História</title>
+    <!--<link rel="stylesheet" href="./css/style.css">-->
+    <link rel="javascript" href="./js/javascript.js">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <style>
+    body{
+      font: 15px/1.5 Arial, Helvetica, sans-serif;
+      padding: 0;
+      margin: 0;
+      background-color: #c03639;
+    }
+
+    .container{
+      width:80%;
+      margin: auto;
+      overflow: hidden;
+
+      ul{
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    header{
+      background:#c03639;
+      color:#ffffff;
+      padding-top: 30px;
+      min-height: 100px;
+    }
+
+    header a{
+      color:#ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size:16px;
+    }
+
+    header li{
+      float: center;
+      display: inline;
+      padding: 0 20px 0 20px;
+    }
+
+    header nav{
+      float: center;
+      margin-top: 10px;
+      margin-left: 150px;
+    }
+
+
+    header a:hover{
+      color:#cccccc;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer{
+      text-align: center;
+      background-color: #c03639;
+      color: #ffffff;
+    }
+
+    #wrapper {
+      padding-left: 250px;
+      transition: all 0.4s ease 0s;
+    }
+
+    #sidebar-wrapper {
+      margin-left: -250px;
+      left: 250px;
+      width: 250px;
+      background: #000;
+      position: fixed;
+      height: 100%;
+      overflow-y: auto;
+      z-index: 1000;
+      transition: all 0.4s ease 0s;
+    }
+
+    #wrapper.active {
+      padding-left: 0;
+    }
+
+    #wrapper.active #sidebar-wrapper {
+      left: 0;
+    }
+
+    #page-content-wrapper {
+      width: 100%;
+    }
+
+    .sidebar-nav {
+      position: absolute;
+      top: 0;
+      width: 250px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sidebar-nav li {
+      line-height: 40px;
+      text-indent: 20px;
+    }
+
+    .sidebar-nav li a {
+      color: #cccccc;
+      display: block;
+      text-decoration: none;
+      padding-left: 60px;
+    }
+
+    .sidebar-nav li a span:before {
+      position: absolute;
+      left: 0;
+      color: #cccccc;
+      text-align: center;
+      width: 20px;
+      line-height: 18px;
+    }
+
+    .sidebar-nav li a:hover,
+    .sidebar-nav li.active {
+      color: #fff;
+      background: rgba(204,204,204,0.2);
+      text-decoration: none;
+    }
+
+    .sidebar-nav li a:active,
+    .sidebar-nav li a:focus {
+      text-decoration: none;
+    }
+
+    .sidebar-nav > .sidebar-brand {
+      height: 65px;
+      line-height: 60px;
+      font-size: 18px;
+    }
+
+    .sidebar-nav > .sidebar-brand a {
+      color: #999999;
+    }
+
+    .sidebar-nav > .sidebar-brand a:hover {
+      color: #fff;
+      background: none;
+    }
+
+    .content-header {
+      height: 65px;
+      line-height: 65px;
+    }
+
+    .content-header h1 {
+      margin: 0;
+      margin-left: 20px;
+      line-height: 65px;
+      display: inline-block;
+    }
+
+    #menu-toggle {
+        text-decoration: none;
+    }
+
+    .btn-menu {
+      color: #000;
+    }
+
+    .inset {
+      padding: 20px;
+    }
+
+    @media (max-width:767px) {
+
+    #wrapper {
+      padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+      left: 0;
+    }
+
+    #wrapper.active {
+      position: relative;
+      left: 250px;
+    }
+
+    #wrapper.active #sidebar-wrapper {
+      left: 250px;
+      width: 250px;
+      transition: all 0.4s ease 0s;
+    }
+
+    #menu-toggle {
+      display: inline-block;
+    }
+
+    .inset {
+      padding: 15px;
+    }
+
+    }
+
+    #textohist{
+      background-color: #cccccc;
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+
+    #textohist h1{
+      color: #c03639;
+      text-align: left;
+      text-decoration: bold;
+    }
+
+    #textohist p{
+      text-align: justify;
+      text-indent: 10px;
+    }
+
+    #textohist figure{
+      margin-left: 110px;
+    }
+
+    #textohist figcaption{
+      margin-left: 200px;
+    }
+
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li class="current"><a href="index1.html">Página Inicial</a></li>
+            <li><a href="definiçao1.html">Terrorismo</a></li>
+            <li><a href="ciberterrorismo1.html">Ciberterrorismo</a></li>
+            <li><a href="about1.html">Acerca</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <nav id="spy">
+                <ul class="sidebar-nav nav">
+                    <li class="sidebar-brand">
+                        <a href="definiçao1.html"><span class="fa fa-home solo">Terrorismo</span></a>
+                    </li>
+                    <li>
+                        <a href="definiçao1.html" data-scroll>
+                            <span class="fa fa-anchor solo">Definição</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="historia1.html" data-scroll>
+                            <span class="fa fa-anchor solo">História</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tipologia1.html" data-scroll>
+                            <span class="fa fa-anchor solo">Tipologia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="causas1.html" data-scroll>
+                            <span class="fa fa-anchor solo">Causas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="consequencias1.html" data-scroll>
+                            <span class="fa fa-anchor solo">Consequências</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    <section id="textohist">
+      <div class="timeline">
+        <div class="container">
+          <h1><b>O surgimento histórico do Terrorismo</b></h1>
+            <p>Data da <b>Antiguidade</b>, a primeira organização que exibiu semelhanças com as atuais organizações terroristas – os Fanáticos da Judeia. Estes organizavam campanhas de assassinato aos Romanos e a todos os judeus que com eles tinham colaborado. </p>
+            <p>Quando esta revolta se tornou pública, os Fanáticos acabaram por cometer suicídios em massa.</p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+          <figure>
+            <img src="img/revolucaofrancesa.jpg" style="width:500px; height:300px;">
+            <figcaption>
+              <h6><i>Revolução Francesa</i></h6>
+            </figcaption>
+          </figure>
+            <p></p>
+            <p></p>
+            <p></p>
+        <div class="container">
+            <p></p>
+            <p>No entanto, o uso da palavra “terrorismo” surgiu aquando da <b>Revolução Francesa</b>, em 1795. Referia-se ao Reinado do Terror, iniciado pelo governo revolucionário que providenciou um exemplo a futuros estados, oprimindo a população.</p>
+            <p>Os oponentes à Revolução inspiraram-se e empregaram práticas terroristas como o assassinato e intimidação. Tais atividades ilegais como a morte de oficiais e aristocratas em espetáculos horríveis começaram muito antes do primeiro uso da guilhotina.</p>
+            <p></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Departamento de Eletrónica, Telecomunicações e Informática || Márcia Pires, copyright &copy; 2018
+      <img src="./img/logo.png" style="width:200px; height:90px; margin-left: 100px"></img>
+    </footer>
+
+  </body>
+</html>

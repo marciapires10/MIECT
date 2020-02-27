@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width">
+    <meta name ="description" content="Terrorismo">
+    <meta name="keywords" content="terrorismo, ciberterrorismo">
+    <meta name ="author" content="Márcia Pires">
+    <title>Ciberterrorismo | Tipologia</title>
+    <!--<link rel="stylesheet" href="./css/style.css">-->
+    <link rel="javascript" href="./js/javascript.js">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <style>
+      body{
+        font: 15px/1.5 Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+        background-color: #c03639;
+      }
+
+      .container{
+        width:80%;
+        margin: auto;
+        overflow: hidden;
+
+        ul{
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      header{
+        background:#c03639;
+        color:#ffffff;
+        padding-top: 30px;
+        min-height: 100px;
+      }
+
+      header a{
+        color:#ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size:16px;
+      }
+
+      header li{
+        float: center;
+        display: inline;
+        padding: 0 20px 0 20px;
+      }
+
+      header nav{
+        float: center;
+        margin-top: 10px;
+        margin-left: 150px;
+      }
+
+
+      header a:hover{
+        color:#cccccc;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      footer{
+        text-align: center;
+        background-color: #c03639;
+        color: #ffffff;
+      }
+
+      #wrapper {
+        padding-left: 250px;
+        transition: all 0.4s ease 0s;
+      }
+
+      #sidebar-wrapper {
+        margin-left: -250px;
+        left: 250px;
+        width: 250px;
+        background: #000;
+        position: fixed;
+        height: 100%;
+        overflow-y: auto;
+        z-index: 1000;
+        transition: all 0.4s ease 0s;
+      }
+
+      #wrapper.active {
+        padding-left: 0;
+      }
+
+      #wrapper.active #sidebar-wrapper {
+        left: 0;
+      }
+
+      #page-content-wrapper {
+        width: 100%;
+      }
+
+      .sidebar-nav {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sidebar-nav li {
+        line-height: 40px;
+        text-indent: 20px;
+      }
+
+      .sidebar-nav li a {
+        color: #cccccc;
+        display: block;
+        text-decoration: none;
+        padding-left: 60px;
+      }
+
+      .sidebar-nav li a span:before {
+        position: absolute;
+        left: 0;
+        color: #cccccc;
+        text-align: center;
+        width: 20px;
+        line-height: 18px;
+      }
+
+      .sidebar-nav li a:hover,
+      .sidebar-nav li.active {
+        color: #fff;
+        background: rgba(204,204,204,0.2);
+        text-decoration: none;
+      }
+
+      .sidebar-nav li a:active,
+      .sidebar-nav li a:focus {
+        text-decoration: none;
+      }
+
+      .sidebar-nav > .sidebar-brand {
+        height: 65px;
+        line-height: 60px;
+        font-size: 18px;
+      }
+
+      .sidebar-nav > .sidebar-brand a {
+        color: #999999;
+      }
+
+      .sidebar-nav > .sidebar-brand a:hover {
+        color: #fff;
+        background: none;
+      }
+
+      .content-header {
+        height: 65px;
+        line-height: 65px;
+      }
+
+      .content-header h1 {
+        margin: 0;
+        margin-left: 20px;
+        line-height: 65px;
+        display: inline-block;
+      }
+
+      #menu-toggle {
+          text-decoration: none;
+      }
+
+      .btn-menu {
+        color: #000;
+      }
+
+      .inset {
+        padding: 20px;
+      }
+
+      @media (max-width:767px) {
+
+      #wrapper {
+        padding-left: 0;
+      }
+
+      #sidebar-wrapper {
+        left: 0;
+      }
+
+      #wrapper.active {
+        position: relative;
+        left: 250px;
+      }
+
+      #wrapper.active #sidebar-wrapper {
+        left: 250px;
+        width: 250px;
+        transition: all 0.4s ease 0s;
+      }
+
+      #menu-toggle {
+        display: inline-block;
+      }
+
+      .inset {
+        padding: 15px;
+      }
+
+      }
+
+      #atuacao{
+        background-color: #cccccc;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+
+      #modos{
+        background-color: #cccccc;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+
+      .btn-primary{
+        background-color: #c03639;
+        border-color: #c03639;
+        margin-left: 16px;
+      }
+
+      .btn-primary:hover{
+        background-color: grey;
+        border-color: grey;
+      }
+
+      #atuacao h1{
+        color: #c03639;
+        text-align: left;
+        text-decoration: bold;
+      }
+
+      #atuacao p{
+        text-align: justify;
+        text-indent: 10px;
+      }
+
+      #video3{
+        background-color: #cccccc;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+
+      #oMeuPopup, #oMeuPopup1, #oMeuPopup2, #oMeuPopup3, #oMeuPopup4, #oMeuPopup5{
+        margin-left: 200px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li class="current"><a href="index1.html">Página Inicial</a></li>
+            <li><a href="definiçao1.html">Terrorismo</a></li>
+            <li><a href="ciberterrorismo1.html">Ciberterrorismo</a></li>
+            <li><a href="about1.html">Acerca</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <nav id="spy">
+                <ul class="sidebar-nav nav">
+                    <li class="sidebar-brand">
+                        <a href="ciberterrorismo1.html"><span class="fa fa-home solo">Ciberterrorismo</span></a>
+                    </li>
+                    <li>
+                        <a href="definiçaociber1.html" data-scroll>
+                            <span class="fa fa-anchor solo">Definição</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vantagens1.html" data-scroll>
+                            <span class="fa fa-anchor solo">Vantagens</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="atuaçao1.html" data-scroll>
+                            <span class="fa fa-anchor solo">Tipologia</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <section id="atuacao">
+          <div class="container">
+          <h1><b>Como agem os Ciberterroristas?</b></h1>
+          <br>
+          <h5><b>Dinâmica dos ataques ciberterroristas:</b></h5>
+         </div>
+        </section>
+
+        <section id="video3">
+          <div class="container">
+            <video width="560" height="320" controls>
+              <source src="./video/CyberSegurança.mp4" type="video/mp4">
+            </video>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+         </div>
+        </section>
+
+        <section id="modos">
+          <div class="container">
+            <h4><b>Descobre mais:</b></h4>
+            <p></p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#oMeuPopup"> Vírus </button>
+            <div id="oMeuPopup" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title"><b>Vírus</b></h4>
+                </div>
+                <div class="modal-body">
+                  <p>Programas que, após serem executados, se duplicam e infetam outros ficheiros dos computadores, propagando-se.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+             </div>
+             </div>
+             <button class="btn btn-primary" data-toggle="modal" data-target="#oMeuPopup1"> Worms </button>
+             <div id="oMeuPopup1" class="modal fade">
+             <div class="modal-dialog">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                   <h4 class="modal-title"><b>Worms</b></h4>
+                 </div>
+                 <div class="modal-body">
+                   <p>Propagam-se através das redes informáticas atacando <i>hosts</i> vulneráveis, infetando-os.</p><p> Apagam ficheiros do computador anfitrião e enviam para os criminosos informação sensível e confidencial dos computadores infetados.</p>
+                 </div>
+                 <div class="modal-footer">
+                   <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                   </div>
+                 </div>
+              </div>
+            </div>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#oMeuPopup2"> Trojans </button>
+              <div id="oMeuPopup2" class="modal fade">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"><b>Trojans</b></h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>São transferidos e executados deliberadamente pelos utilizadores dos sistemas informáticos já que tendem a parecer ficheiros inofensivos, quando na realidade, apagam ficheiros, alteram as configurações do sistema operativo e abrem <i>backdoors</i> para que os criminosos entrem nos computadores infetados, podendo roubar/destruir/adulterar informação confidencial.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+               </div>
+               </div>
+               <button class="btn btn-primary" data-toggle="modal" data-target="#oMeuPopup3"> Spam </button>
+               <div id="oMeuPopup3" class="modal fade">
+               <div class="modal-dialog">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                     <h4 class="modal-title"><b>Spam</b></h4>
+                   </div>
+                   <div class="modal-body">
+                     <p>Envio de mensagens publicitárias não solicitadas em grande escala, normalmente via <i>e-mail</i>, contendo às vezes hiperligações para sites que contém vírus.</p>
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                     </div>
+                   </div>
+                </div>
+                </div>
+
+                <button class="btn btn-primary" data-toggle="modal" data-target="#oMeuPopup4">Spyware</button>
+                <div id="oMeuPopup4" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title"><b>Spyware</b></h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Violam a privacidade das organizações, empresas e indivíduos ao enviar informação para os criminosos. Normalmente, também alteram a configuração dos sistemas.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                 </div>
+                 </div>
+                 <button class="btn btn-primary" data-toggle="modal" data-target="#oMeuPopup5">Phishing</button>
+                 <div id="oMeuPopup5" class="modal fade">
+                 <div class="modal-dialog">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                       <h4 class="modal-title"><b>Phishing</b></h4>
+                     </div>
+                     <div class="modal-body">
+                       <p>Tentativa de conseguir dados pessoais para depois serem usados para lesar os afetados. Inclui o furto de identidade, roubo de cartão de crédito, senhas de acesso a contas na internet, etc. </p><p>Para isso, os criminosos alteram o design de sites fazendo-os parecer de organizações legítimas onde os indivíduos inserem os seus dados pessoais que são depois roubados pelos criminosos e usados para proveito próprio ou para financiar atividades ilícitas.</p>
+                     </div>
+                     <div class="modal-footer">
+                       <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                       </div>
+                     </div>
+                  </div>
+                  </div>
+                  <p></p>
+                  <p></p>
+                  <br>
+          </div>
+        </section>
+
+
+        <footer>
+          Departamento de Eletrónica, Telecomunicações e Informática || Márcia Pires, copyright &copy; 2018
+          <img src="./img/logo.png" style="width:200px; height:90px; margin-left: 100px"></img>
+        </footer>
+
+  </body>
+</html>
