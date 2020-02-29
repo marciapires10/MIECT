@@ -1,0 +1,39 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+
+entity ALU_8Func_VHDL is 
+
+ port(
+		A	: in	std_logic;
+		B	: in	std_logic;
+		F	: out	std_logic;
+		C2	: in	std_logic;
+		C1	: in	std_logic;
+		C0	: in	std_logic
+	);
+
+end ALU_8Func_VHDL;
+
+
+architecture arch1 of ALU_8Func_VHDL is
+
+  -- Constants
+	constant delay_AND : time := 7 ns;
+	constant delay_OR : time := 5 ns; 
+  
+  -- Variables (signals)
+	signal p : std_logic_vector(3 downto 0);                                                    
+
+begin
+
+  -- Your VHDL code defining the model goes here
+  
+	p(0) <=     A  and     B  and not(C1) after delay_AND;
+	p(1) <= not(A) and     B  and not(C2) after delay_AND;
+	p(2) <= not(A) and not(B) and not(C0) after delay_AND;
+	p(3) <=     A  and not(B) and not(C2) after delay_AND;
+	
+	F <= p(0) or p(1) or p(2) or p(3) after delay_OR;
+
+end arch1;

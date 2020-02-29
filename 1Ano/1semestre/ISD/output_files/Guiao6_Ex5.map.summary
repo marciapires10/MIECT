@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Nov 28 22:44:01 2017
+Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+Revision Name : Guiao6_Ex5
+Top-level Entity Name : Guiao6_Ex5
+Family : Cyclone IV E
+Total logic elements : 2
+    Total combinational functions : 2
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

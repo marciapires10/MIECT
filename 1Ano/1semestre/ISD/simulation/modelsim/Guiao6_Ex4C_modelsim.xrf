@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/marci/Desktop/Universidade/1º Ano/1º semestre/ISD/Guiao6_Ex4C.bdf
+source_file = 1, c:/altera_lite/15.1/quartus/libraries/others/maxplus2/mux41.bdf
+design_name = Guiao6_Ex4C
+instance = comp, \Out~output\, Out~output, Guiao6_Ex4C, 1
+instance = comp, \A~input\, A~input, Guiao6_Ex4C, 1
+instance = comp, \B~input\, B~input, Guiao6_Ex4C, 1
+instance = comp, \D~input\, D~input, Guiao6_Ex4C, 1
+instance = comp, \C~input\, C~input, Guiao6_Ex4C, 1
+instance = comp, \inst|6~0\, inst|6~0, Guiao6_Ex4C, 1

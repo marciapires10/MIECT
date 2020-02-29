@@ -1,0 +1,42 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+
+entity PLA12 is 
+
+ port(
+		X	: in	std_logic;
+		Q0	: in	std_logic;
+		Q1	: in	std_logic;
+		Q2	: in	std_logic;
+		D0	: out	std_logic;
+		D1	: out	std_logic;
+		D2	: out	std_logic
+	);
+
+end PLA12;
+
+
+architecture arch1 of PLA12 is
+
+    constant delay_AND:time:=5 ns;
+    constant delay_OR:time:=6 ns;
+    signal p:std_logic_vector(8 downto 0);
+
+begin
+
+  p(8)<= Q2 and not Q1 and not Q0 after delay_AND;
+  p(7)<= not Q2 and Q1 and Q0 after delay_AND;
+  p(6)<= not Q2 and Q1 and X after delay_AND;
+  p(5)<= X and Q2 and not Q1 and not Q0 after delay_AND;
+  p(4)<= X and not Q2 and not Q1 and Q0 after delay_AND;
+  p(3)<= not X and  not Q2 and Q1 after delay_AND;
+  p(2)<= X and not Q2 and Q1 and Q0 after delay_AND;
+  p(1)<= X and not Q1 and not Q0 after delay_AND;
+  p(0)<= not X and not Q2 and Q1 and not Q0 after delay_AND;
+      
+  D2<=p(8) or p(7) or p(6) after delay_OR;
+  D1<=p(5) or p(4) or p(3) after delay_OR;
+  D0<=p(8) or p(2) or p(1) or p(0) after delay_OR;
+      
+end arch1;
