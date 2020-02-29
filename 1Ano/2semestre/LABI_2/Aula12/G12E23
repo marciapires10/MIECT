@@ -1,0 +1,15 @@
+mt1 = int(input("Nota MT1: "))
+mt2 = int(input("Nota MT2: "))
+mt3 = int(input("Nota MT3: "))
+mt4 = int(input("Nota MT4: "))
+ap1 = int(input("Nota AP1: "))
+ap2 = int(input("Nota AP2: "))
+proj1 = int(input("Nota Proj1: "))
+proj2 = int(input("Nota Proj2: "))
+
+nota = (mt1*0.1)+(mt2*0.1)+(mt3*0.1)+(mt4*0.1)+(ap1*0.1)+(ap2*0.1)+(proj1*0.15)+(proj2*0.25)
+
+if (nota >= 9.5 and nota <= 20):
+	print ("Aprovado")
+elif (nota >9.5 and nota>=0):
+	print("Reprovado")
