@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte2/simulation/modelsim
+Ebinudcntenrst4
+Z1 w1523368497
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte2/BinUDCntEnRst4.vhd
+Z6 FC:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte2/BinUDCntEnRst4.vhd
+l0
+L5
+V1XP6U3a745jId2WfWaBf;2
+!s100 g<JgVB5lO<S`6n<=X]:1X2
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1523369842
+!i10b 1
+Z9 !s108 1523369842.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte2/BinUDCntEnRst4.vhd|
+Z11 !s107 C:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte2/BinUDCntEnRst4.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+Z14 DEx4 work 14 binudcntenrst4 0 22 1XP6U3a745jId2WfWaBf;2
+l18
+L14
+VUVDU:Ii2?hzbNB96jajjA3
+!s100 2M><@;>:KX<P^QGRFzfdF1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ebinudcntenrst4_tb
+Z15 w1523369735
+R3
+R4
+R0
+Z16 8C:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte2/BinUDCntEnRst4_Tb.vhd
+Z17 FC:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte2/BinUDCntEnRst4_Tb.vhd
+l0
+L4
+V^nK3^I>AY8UQf9XT7ZFbT3
+!s100 HO7QWUbcj_;2NnSCJo;]z0
+R7
+32
+Z18 !s110 1523369877
+!i10b 1
+Z19 !s108 1523369877.000000
+Z20 !s90 -reportprogress|300|-work|work|C:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte2/BinUDCntEnRst4_Tb.vhd|
+Z21 !s107 C:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte2/BinUDCntEnRst4_Tb.vhd|
+!i113 1
+Z22 o-work work
+R13
+Astimulus
+R2
+R14
+R3
+R4
+DEx4 work 17 binudcntenrst4_tb 0 22 ^nK3^I>AY8UQf9XT7ZFbT3
+l14
+L7
+VJeg2OD>8hmoBO[J?b`cCg3
+!s100 jIo:HBc2gUBYKUb1LDZK@2
+R7
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R22
+R13

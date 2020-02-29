@@ -1,0 +1,89 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte1/simulation/modelsim
+Edec2_4en
+Z1 w1523365806
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte1/Dec2_4En.vhd
+Z5 FC:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte1/Dec2_4En.vhd
+l0
+L4
+VaB:CgPEk^DanA8^hjE^eZ0
+!s100 ibWAOa5aiB=ej3UE[fj>@1
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1523366656
+!i10b 1
+Z8 !s108 1523366655.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte1/Dec2_4En.vhd|
+Z10 !s107 C:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte1/Dec2_4En.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+Z13 DEx4 work 8 dec2_4en 0 22 aB:CgPEk^DanA8^hjE^eZ0
+l13
+L11
+V0Mclg5f;SIc7K8EM7eCK@1
+!s100 7?z^Soh5=7jhNc[YChEjb3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edec2_4en_tb
+Z14 w1523366465
+R2
+R3
+R0
+Z15 8C:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte1/Dec2_4En_Tb.vhd
+Z16 FC:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte1/Dec2_4En_Tb.vhd
+l0
+L4
+VJFn^2kR:<odPWJMeHK4`[0
+!s100 EGUfSIK5TJKnYz=C^oXk`0
+R6
+32
+Z17 !s110 1523366889
+!i10b 1
+Z18 !s108 1523366889.000000
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte1/Dec2_4En_Tb.vhd|
+Z20 !s107 C:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula7/Parte1/Dec2_4En_Tb.vhd|
+!i113 1
+Z21 o-work work
+R12
+Astimulus
+R13
+R2
+R3
+Z22 DEx4 work 11 dec2_4en_tb 0 22 JFn^2kR:<odPWJMeHK4`[0
+l14
+L7
+Z23 V`U7[z3[E1=jnIQ]XmASb_1
+Z24 !s100 2DRcb9=Dc_7Ch`_i7IhOl0
+R6
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R21
+R12

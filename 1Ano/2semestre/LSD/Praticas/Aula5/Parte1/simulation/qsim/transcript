@@ -1,0 +1,31 @@
+# do CmpN_Demo.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:50:14 on Mar 20,2018
+# vlog -work work CmpN_Demo.vo 
+# -- Compiling module CmpN
+# 
+# Top level modules:
+# 	CmpN
+# End time: 13:50:14 on Mar 20,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:50:14 on Mar 20,2018
+# vlog -work work CmpN.vwf.vt 
+# -- Compiling module CmpN_vlg_vec_tst
+# 
+# Top level modules:
+# 	CmpN_vlg_vec_tst
+# End time: 13:50:15 on Mar 20,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.CmpN_vlg_vec_tst 
+# Start time: 13:50:15 on Mar 20,2018
+# Loading work.CmpN_vlg_vec_tst
+# Loading work.CmpN
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# after#23
+# ** Note: $finish    : CmpN.vwf.vt(52)
+#    Time: 1 us  Iteration: 0  Instance: /CmpN_vlg_vec_tst
+# End time: 13:50:15 on Mar 20,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

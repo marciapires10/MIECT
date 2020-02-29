@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula2/Mux2_1.vhd
+source_file = 1, C:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula2/Mux2_1Demo.bdf
+source_file = 1, c:/intelfpga_lite/17.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/17.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/17.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/17.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula2/db/Mux2_1Demo.cbx.xml
+design_name = Mux2_1
+instance = comp, \dataOut~output , dataOut~output, Mux2_1, 1
+instance = comp, \dataln1~input , dataln1~input, Mux2_1, 1
+instance = comp, \dataln0~input , dataln0~input, Mux2_1, 1
+instance = comp, \sel~input , sel~input, Mux2_1, 1
+instance = comp, \dataOut~0 , dataOut~0, Mux2_1, 1

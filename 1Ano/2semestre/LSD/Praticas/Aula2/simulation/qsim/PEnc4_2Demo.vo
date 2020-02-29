@@ -1,0 +1,154 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition"
+
+// DATE "03/05/2018 21:27:44"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module PEnc4_2 (
+	decodedIn,
+	encodedOut,
+	validOut);
+input 	[3:0] decodedIn;
+output 	[1:0] encodedOut;
+output 	validOut;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \encodedOut[0]~output_o ;
+wire \encodedOut[1]~output_o ;
+wire \validOut~output_o ;
+wire \decodedIn[0]~input_o ;
+wire \decodedIn[1]~input_o ;
+wire \decodedIn[2]~input_o ;
+wire \decodedIn[3]~input_o ;
+wire \Equal0~0_combout ;
+
+
+cycloneive_io_obuf \encodedOut[0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\encodedOut[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \encodedOut[0]~output .bus_hold = "false";
+defparam \encodedOut[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \encodedOut[1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\encodedOut[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \encodedOut[1]~output .bus_hold = "false";
+defparam \encodedOut[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \validOut~output (
+	.i(\Equal0~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\validOut~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \validOut~output .bus_hold = "false";
+defparam \validOut~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_ibuf \decodedIn[0]~input (
+	.i(decodedIn[0]),
+	.ibar(gnd),
+	.o(\decodedIn[0]~input_o ));
+// synopsys translate_off
+defparam \decodedIn[0]~input .bus_hold = "false";
+defparam \decodedIn[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \decodedIn[1]~input (
+	.i(decodedIn[1]),
+	.ibar(gnd),
+	.o(\decodedIn[1]~input_o ));
+// synopsys translate_off
+defparam \decodedIn[1]~input .bus_hold = "false";
+defparam \decodedIn[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \decodedIn[2]~input (
+	.i(decodedIn[2]),
+	.ibar(gnd),
+	.o(\decodedIn[2]~input_o ));
+// synopsys translate_off
+defparam \decodedIn[2]~input .bus_hold = "false";
+defparam \decodedIn[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \decodedIn[3]~input (
+	.i(decodedIn[3]),
+	.ibar(gnd),
+	.o(\decodedIn[3]~input_o ));
+// synopsys translate_off
+defparam \decodedIn[3]~input .bus_hold = "false";
+defparam \decodedIn[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb \Equal0~0 (
+// Equation(s):
+// \Equal0~0_combout  = (\decodedIn[0]~input_o  & (!\decodedIn[1]~input_o  & (!\decodedIn[2]~input_o  & !\decodedIn[3]~input_o )))
+
+	.dataa(\decodedIn[0]~input_o ),
+	.datab(\decodedIn[1]~input_o ),
+	.datac(\decodedIn[2]~input_o ),
+	.datad(\decodedIn[3]~input_o ),
+	.cin(gnd),
+	.combout(\Equal0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Equal0~0 .lut_mask = 16'h0002;
+defparam \Equal0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign encodedOut[0] = \encodedOut[0]~output_o ;
+
+assign encodedOut[1] = \encodedOut[1]~output_o ;
+
+assign validOut = \validOut~output_o ;
+
+endmodule

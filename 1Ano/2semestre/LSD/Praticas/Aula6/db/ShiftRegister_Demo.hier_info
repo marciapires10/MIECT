@@ -1,0 +1,12 @@
+|ShiftRegisterN
+clk => s_data[0].CLK
+clk => s_data[1].CLK
+clk => s_data[2].CLK
+clk => s_data[3].CLK
+sin => s_data[0].DATAIN
+dataOut[0] <= s_data[0].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[1] <= s_data[1].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[2] <= s_data[2].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[3] <= s_data[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

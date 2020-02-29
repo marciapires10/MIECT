@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula3/Parte1/simulation/qsim
+vAdder4
+Z1 !s110 1520343512
+!i10b 1
+!s100 0hh@:Gno__JzXmj?3P:hT3
+I9X6=W8FlTGb4_3dK8ie:U3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1520343511
+8AdderDemo.vo
+FAdderDemo.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1520343512.000000
+!s107 AdderDemo.vo|
+!s90 -work|work|AdderDemo.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@adder4
+vAdder4_vlg_vec_tst
+R1
+!i10b 1
+!s100 GhTI98;];_nSaK@`2EY0K2
+I9SF6[gj?K50XB^`_Kz;560
+R2
+R0
+w1520343510
+8Adder4.vwf.vt
+FAdder4.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Adder4.vwf.vt|
+!s90 -work|work|Adder4.vwf.vt|
+!i113 1
+R5
+R6
+n@adder4_vlg_vec_tst

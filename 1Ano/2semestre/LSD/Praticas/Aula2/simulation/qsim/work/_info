@@ -1,0 +1,142 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula2/simulation/qsim
+vDec2_4En
+Z1 !s110 1519678278
+!i10b 1
+!s100 e5TEzHaU6cUg@DOB<_IIh1
+I2]Me[g;n[c^Dc0>Cbm[Y<0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1519678277
+8Dec2_4EnDemo.vo
+FDec2_4EnDemo.vo
+Z3 L0 31
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1519678278.000000
+!s107 Dec2_4EnDemo.vo|
+!s90 -work|work|Dec2_4EnDemo.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@dec2_4@en
+vDec2_4En_vlg_vec_tst
+R1
+!i10b 1
+!s100 Cd_1];^O1Tm5>SXEkK_4Y3
+IXQ1^X`3B]CERHA;2:_TcY3
+R2
+R0
+w1519678275
+8Dec2_4En_2.vwf.vt
+FDec2_4En_2.vwf.vt
+Z8 L0 29
+R4
+r1
+!s85 0
+31
+R5
+!s107 Dec2_4En_2.vwf.vt|
+!s90 -work|work|Dec2_4En_2.vwf.vt|
+!i113 1
+R6
+R7
+n@dec2_4@en_vlg_vec_tst
+vMux2_1
+Z9 !s110 1519742031
+!i10b 1
+!s100 >n?a<1zXGBf:GBjEgg;e71
+IX84>`?m:cURRdl^?i26oH1
+R2
+R0
+w1519742029
+8Mux2_1Demo.vo
+FMux2_1Demo.vo
+R3
+R4
+r1
+!s85 0
+31
+!s108 1519742030.000000
+!s107 Mux2_1Demo.vo|
+!s90 -work|work|Mux2_1Demo.vo|
+!i113 1
+R6
+R7
+n@mux2_1
+vMux2_1_vlg_vec_tst
+R9
+!i10b 1
+!s100 :k0N]SO;RGQ9KH8jjJ:bf0
+IY?a6>n4fAaMDhM`TUH@>g3
+R2
+R0
+w1519742028
+8Mux2_1.vwf.vt
+FMux2_1.vwf.vt
+R8
+R4
+r1
+!s85 0
+31
+!s108 1519742031.000000
+!s107 Mux2_1.vwf.vt|
+!s90 -work|work|Mux2_1.vwf.vt|
+!i113 1
+R6
+R7
+n@mux2_1_vlg_vec_tst
+vPEnc4_2
+Z10 !s110 1520285265
+!i10b 1
+!s100 zV2YOPe^g2]7ofSR<@:NI3
+IQnYH`KnBomzVlHl_9;U]z2
+R2
+R0
+w1520285264
+8PEnc4_2Demo.vo
+FPEnc4_2Demo.vo
+R3
+R4
+r1
+!s85 0
+31
+Z11 !s108 1520285265.000000
+!s107 PEnc4_2Demo.vo|
+!s90 -work|work|PEnc4_2Demo.vo|
+!i113 1
+R6
+R7
+n@p@enc4_2
+vPEnc4_2_vlg_vec_tst
+R10
+!i10b 1
+!s100 mFEoLLLnFO6;e?m1dglDS0
+I>8g;NMFd]dlGMaMLa]o7[3
+R2
+R0
+w1520285263
+8PEnc4_2.vwf.vt
+FPEnc4_2.vwf.vt
+R8
+R4
+r1
+!s85 0
+31
+R11
+!s107 PEnc4_2.vwf.vt|
+!s90 -work|work|PEnc4_2.vwf.vt|
+!i113 1
+R6
+R7
+n@p@enc4_2_vlg_vec_tst

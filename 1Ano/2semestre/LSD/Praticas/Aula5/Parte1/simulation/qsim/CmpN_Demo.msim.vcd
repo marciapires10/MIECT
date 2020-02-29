@@ -1,0 +1,170 @@
+$comment
+	File created using the following command:
+		vcd file CmpN_Demo.msim.vcd -direction
+$end
+$date
+	Tue Mar 20 13:50:15 2018
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module CmpN_vlg_vec_tst $end
+$var reg 8 ! input0 [7:0] $end
+$var reg 8 " input1 [7:0] $end
+$var wire 1 # equal $end
+$var wire 1 $ ItSigned $end
+$var wire 1 % ItUnsigned $end
+$var wire 1 & notEqual $end
+
+$scope module i1 $end
+$var wire 1 ' gnd $end
+$var wire 1 ( vcc $end
+$var wire 1 ) unknown $end
+$var tri1 1 * devclrn $end
+$var tri1 1 + devpor $end
+$var tri1 1 , devoe $end
+$var wire 1 - equal~output_o $end
+$var wire 1 . notEqual~output_o $end
+$var wire 1 / ItSigned~output_o $end
+$var wire 1 0 ItUnsigned~output_o $end
+$var wire 1 1 input0[0]~input_o $end
+$var wire 1 2 input0[1]~input_o $end
+$var wire 1 3 input1[1]~input_o $end
+$var wire 1 4 input1[0]~input_o $end
+$var wire 1 5 Equal0~0_combout $end
+$var wire 1 6 input0[2]~input_o $end
+$var wire 1 7 input0[3]~input_o $end
+$var wire 1 8 input1[3]~input_o $end
+$var wire 1 9 input1[2]~input_o $end
+$var wire 1 : Equal0~1_combout $end
+$var wire 1 ; input0[4]~input_o $end
+$var wire 1 < input0[5]~input_o $end
+$var wire 1 = input1[5]~input_o $end
+$var wire 1 > input1[4]~input_o $end
+$var wire 1 ? Equal0~2_combout $end
+$var wire 1 @ input0[6]~input_o $end
+$var wire 1 A input0[7]~input_o $end
+$var wire 1 B input1[7]~input_o $end
+$var wire 1 C input1[6]~input_o $end
+$var wire 1 D Equal0~3_combout $end
+$var wire 1 E Equal0~4_combout $end
+$var wire 1 F LessThan0~1_cout $end
+$var wire 1 G LessThan0~3_cout $end
+$var wire 1 H LessThan0~5_cout $end
+$var wire 1 I LessThan0~7_cout $end
+$var wire 1 J LessThan0~9_cout $end
+$var wire 1 K LessThan0~11_cout $end
+$var wire 1 L LessThan0~13_cout $end
+$var wire 1 M LessThan0~14_combout $end
+$var wire 1 N LessThan1~1_cout $end
+$var wire 1 O LessThan1~3_cout $end
+$var wire 1 P LessThan1~5_cout $end
+$var wire 1 Q LessThan1~7_cout $end
+$var wire 1 R LessThan1~9_cout $end
+$var wire 1 S LessThan1~11_cout $end
+$var wire 1 T LessThan1~13_cout $end
+$var wire 1 U LessThan1~14_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1111111 !
+b11111111 "
+0#
+0$
+1%
+1&
+0'
+1(
+x)
+1*
+1+
+1,
+0-
+1.
+0/
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+1:
+1;
+1<
+1=
+1>
+1?
+1@
+0A
+1B
+1C
+0D
+0E
+0F
+1G
+0H
+1I
+0J
+1K
+0L
+0M
+0N
+1O
+0P
+1Q
+0R
+1S
+0T
+1U
+$end
+#70000
+b111111 !
+b11111 !
+b1111 !
+b111 !
+b11 !
+b1 !
+b0 !
+b1111111 "
+b111111 "
+b11111 "
+b1111 "
+b111 "
+b11 "
+b1 "
+b0 "
+04
+03
+09
+08
+0>
+0=
+0C
+0B
+01
+02
+06
+07
+0;
+0<
+0@
+1D
+0U
+00
+0%
+1E
+0.
+1-
+1#
+0&
+#1000000

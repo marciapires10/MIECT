@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula4/Parte1/simulation/qsim
+vFlipFlopD
+Z1 !s110 1520811151
+!i10b 1
+!s100 33[_k3a04FUQkao7Y>l1I0
+I_5<eR83_NnDQ8RloUi1KS2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1520811150
+8FlipFlopD_Demo.vo
+FFlipFlopD_Demo.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1520811151.000000
+!s107 FlipFlopD_Demo.vo|
+!s90 -work|work|FlipFlopD_Demo.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@flip@flop@d
+vFlipFlopD_vlg_vec_tst
+R1
+!i10b 1
+!s100 ;@3jMi9[@768WOo3V_C]T2
+IEXZ6jfI]PTQi77T]akdhM0
+R2
+R0
+w1520811149
+8FlipFlopDSyn.vwf.vt
+FFlipFlopDSyn.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 FlipFlopDSyn.vwf.vt|
+!s90 -work|work|FlipFlopDSyn.vwf.vt|
+!i113 1
+R5
+R6
+n@flip@flop@d_vlg_vec_tst

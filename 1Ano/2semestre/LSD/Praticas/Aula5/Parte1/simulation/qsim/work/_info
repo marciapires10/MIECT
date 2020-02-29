@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/marci/Desktop/Universidade/1Ano/2semestre/LSD/Praticas/Aula5/simulation/qsim
+vCmpN
+!s110 1521553814
+!i10b 1
+!s100 0:?F[bec49`>RZQ;k5?<f3
+IAGJFPK3[9D>OR?2VNOHYe0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1521553812
+8CmpN_Demo.vo
+FCmpN_Demo.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1521553814.000000
+!s107 CmpN_Demo.vo|
+!s90 -work|work|CmpN_Demo.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@cmp@n
+vCmpN_vlg_vec_tst
+!s110 1521553815
+!i10b 1
+!s100 L5FXJ;Kd7PPB0c=lb4REz3
+Ice[@RHXPPmkBmHdmTP[lZ1
+R1
+R0
+w1521553810
+8CmpN.vwf.vt
+FCmpN.vwf.vt
+L0 29
+R2
+r1
+!s85 0
+31
+R3
+!s107 CmpN.vwf.vt|
+!s90 -work|work|CmpN.vwf.vt|
+!i113 1
+R4
+R5
+n@cmp@n_vlg_vec_tst

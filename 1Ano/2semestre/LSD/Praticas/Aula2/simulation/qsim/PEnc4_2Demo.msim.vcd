@@ -1,0 +1,84 @@
+$comment
+	File created using the following command:
+		vcd file PEnc4_2Demo.msim.vcd -direction
+$end
+$date
+	Mon Mar 05 21:27:46 2018
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module PEnc4_2_vlg_vec_tst $end
+$var reg 4 ! decodedIn [3:0] $end
+$var wire 1 " encodedOut [1] $end
+$var wire 1 # encodedOut [0] $end
+$var wire 1 $ validOut $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + encodedOut[0]~output_o $end
+$var wire 1 , encodedOut[1]~output_o $end
+$var wire 1 - validOut~output_o $end
+$var wire 1 . decodedIn[0]~input_o $end
+$var wire 1 / decodedIn[1]~input_o $end
+$var wire 1 0 decodedIn[2]~input_o $end
+$var wire 1 1 decodedIn[3]~input_o $end
+$var wire 1 2 Equal0~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1000 !
+0#
+0"
+0$
+0%
+1&
+x'
+1(
+1)
+1*
+0+
+0,
+0-
+0.
+0/
+00
+11
+02
+$end
+#80000
+b0 !
+b100 !
+10
+01
+#160000
+b110 !
+b10 !
+1/
+00
+#240000
+b11 !
+b1 !
+1.
+0/
+12
+1-
+1$
+#320000
+b0 !
+0.
+02
+0-
+0$
+#1000000
